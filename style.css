@@ -1,0 +1,536 @@
+
+/* Что бы перенести стили из браузера в файл необходимо в инспекторе браузера кликнуть по style.css и скопировать Ctrl+A, затем вставить в файл.
+Что бы навести порядок, активмруем расширение prettier Ctrl+Shift+P и в поиске написать формат документа- выбираем автоисправление.*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+body{
+   
+}
+.section__main{
+ /* position: absolute; */
+ margin: 0 auto;
+ width: 1440px;
+ height: 3014px;
+ /* left: 0px;
+ top: 0px; */
+ font-family: 'Poppins', sans-serif;
+ font-weight: 500;
+ background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%) no-repeat;
+ /* background-position: center; */
+ /* background-size: cover; */
+}
+.header{
+    display: flex;
+     justify-content: space-between; /*равноудалённо по всей ширене области*/
+     align-items: center;
+     /* justify-items: center; */
+     max-width: 1195.45px;
+     margin: 0 auto;
+     padding:22px 15px 93px 15px;
+}
+.header__logo{
+    display: block;
+    width: 130px;
+    height:25px;
+    padding-right: 30px;
+    background-image: url(logo.svg);
+    background-repeat: no-repeat;
+}
+
+.form{
+   position: relative;
+   /* padding-right: 50px; */
+   /* padding-top: 20px; */
+}
+.form__button{
+    position: absolute;
+    top:calc(50% - 10px);/*50%(высоты родителя<.form>)минус 10px(половина высоты элемента<.form__button>)*/
+    left:10px;
+    display: block; 
+    width: 20px;
+    height: 20px;
+    background-image: url(search.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+}
+.form__input{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+color: rgba(255, 255, 255, 0.5);
+    width: 384px;
+height: 50px;
+    /* height: 50px; */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: none;
+    padding: 8px 40px;
+    color:white;
+}
+.form__input::placeholder/*заполнитель*/{
+    color: rgba(255, 255, 255, 0.5);
+}
+.form__input:focus /*при клике нет лишних линий*/{
+    outline: none;/*контур никто*/
+}
+.header__nav{
+    padding-right: 9px;
+}
+.header__list{
+    display: flex;
+    list-style-type:none;
+    gap: 40px;
+}
+.header__link{
+    font-size: 20px;
+    color:white;
+    text-decoration: none; /*черта под текстом*/
+}
+.header__link_gradient{ 
+    width: 171px;
+    height: 50px;
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+    border-radius: 10px;
+    padding: 10px 20px;
+    gap: 10px;
+}
+.section{
+    /* width: 1197px; */
+    padding-bottom: 150px;
+}
+.container{
+    max-width: 1195.45px;
+    margin: 0 auto;
+    padding-left:15px;
+    padding-right: 15px;
+}
+.main{
+    display: flex;
+    justify-content: space-between; /*равноудалённо по всей ширене области*/
+}
+.main__text{
+    width: 490px;
+   
+    /* height: 457px; */
+}
+.main__text_h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+.main__text_p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 9px;
+    /* padding-bottom: 30px; */
+}
+/* .main__text_ul{
+    display: flex;
+    list-style-type:none;
+    gap:20px;
+   
+}
+.main__text_li{
+
+} */
+.main__text_a{
+    /* display: flex; */
+    /* width: 298px;
+    height: 50px; */
+    padding-bottom: 35px;
+    margin-top: 40px;
+    /* gap:50px; */
+}
+.main__text_link{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-decoration: none; /*черта под текстом*/
+    /* padding-bottom: 40px; */
+}
+.main__text_link_gradient{
+    width: 161px;
+    height: 50px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+    border-radius: 10px;
+    margin-right: 16px;
+    /* gap:10px; */
+}
+.main__text_link_gradient2{
+    width: 117px;
+    height: 50px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-right: 0px;
+    /* gap:10px; */
+}
+.main__text_ul2{
+    display: flex;
+    width: 487px;
+    height: 75px;
+    padding-left: 1px;
+    list-style-type:none;/*убрать точки*/
+    justify-content: space-between; /*равноудалённо по всей ширене области*/
+}
+.main__text_span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+.main__text_li2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center; 
+}
+.main__text_span{
+    display: block;
+}
+.main__image{
+    width: 588px;
+    height:515px;
+    margin-top: 12px;
+    /* margin-left: 10px; */
+    /* padding-top: 0px; */
+    /* width: 100%; */
+    background-image: url(heroimage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section__brand{
+    width: 1197px;
+    margin: 0 auto;
+}
+.brand{
+    display: flex;
+    justify-content: space-between; 
+    /* width: 1196.54px;
+    height: 60px; */
+    /* padding-left: 122px; */
+    /* align-items: center; */
+     /* gap:50px;  */
+    /* margin: 0 auto;  */
+    padding-bottom: 17px;
+    
+    
+}
+/* .brand__1{
+    padding-right: 151px;
+}
+.brand__2{
+    padding-right: 149px;
+} */
+.cards{
+    width: 1210px;
+    height: 755px;
+    margin: 0 auto;
+   
+}
+.cards__text{
+    /* width: 423px;
+    height: 130px; */
+    /* margin: 0 auto; */
+    /* padding-left: 387px;
+    padding-bottom: 30px;
+    text-align: center; */
+}
+.cards__text_h2{
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-left: -12px;
+    margin-bottom: -3px;
+    /* line-height: 60px; */
+    /* font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    /* color: #FFFFFF; */ 
+    /* margin-bottom: 0px; */
+}
+.cards__text_p{
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    line-height: 30px;
+    margin-left: -16px;
+    padding-bottom: 11px;
+    /* font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: -23px; */
+}
+.cards__card{
+    display: flex;
+    gap: 15px;
+    padding-bottom: 224px;
+    /* padding-right: 20px; */
+    /* display: flex;
+    width: 1197px;
+    height: 595px;
+    gap: 15px; */
+}
+.cards__card1{
+    width: 389px;
+    
+    height: 595px;
+    /* align-items: center; */
+    background: rgba(255, 255, 255, 0.1);
+box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+cursor: pointer;
+}
+.img{
+    width: 337px;
+height: 380px;
+/* padding-bottom: 32px; */
+padding: 26px 26px 6px 26px;
+/* border-radius: 10px; */
+}
+.cards__card1:hover{
+    background: rgba(255, 255, 255, 0.5);
+    transition: .3s;/*плавность смены цвета*/
+}
+.cards__card1_img{
+    /* padding: 26px 26px 2px 26px; */
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 10px;
+}
+.cards__card_h4-h5{
+    display: flex;
+    width: 337px;
+    height: 57px;
+    padding-left: 27px;
+    justify-items: center;
+    margin-bottom: -4px
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* padding-bottom: 15px; */
+    /* padding-top: -20px; */
+    /* margin-top: 0px; */
+}
+.cards__card_h3-h3-1{
+    display: flex;
+    width: 337px;
+    height: 50px;;
+    padding-left: 26.5px;
+    /* padding-top: px; */
+}
+.cards__card1_h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 169px;
+    margin-top: 13px;
+    /* margin-bottom: 5px; */
+    /* padding-top: 0px; */
+    
+    color: rgba(255, 255, 255, 0.5);
+}
+.cards__card1_h5{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 14px;
+}
+.cards__card1_h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding-right: 78.5px;
+    margin-top: 0px;
+    /* padding-top: 15px; */
+}
+.cards__card1_h3-1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-top: -17px;
+}
+.cards__btn{
+    width: 337px;
+height: 50px;
+background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+border-radius: 10px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+color: #FFFFFF;
+/* padding:0 auto; */
+/* margin: 0 auto; */
+/* padding-left: 30px; */
+margin-left: 26px;
+margin-top: 3px;
+border: none;
+cursor: pointer;
+/* padding-top: 9px; */
+/* text-align: center; */
+/* justify-content: center; */
+}
+.cards__btn:hover{
+   background-image: url(btn.png);
+    /* background: rgba(255, 255, 255, 0.5); */
+    /* border: 1px solid purple; */
+    /* color:#B75CFF 6.04%;  */
+}
+.question{
+
+}
+.title{
+text-align: center;
+}
+.title__h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 180%;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+.title__p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 10px;
+}
+.question__columns{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 118px;
+}
+.column{
+    width: 592px;
+    height: 280px;
+    /* padding-bottom: 30px; */
+}
+ /* Оформите кнопки, которые используются для открытия и закрытия панели аккордеона  */
+.accordion {
+    width: 591px;
+    height: 94px;
+    /* border: 3 px solid red; */
+    background-color:transparent;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    /* height: 100%; */
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    transition: 0.4s;
+  }
+  /* .accordion__p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.5);
+  } */
+  
+   /*Добавьте цвет фона к кнопке, если на нее нажать (добавьте класс .active с помощью JS), и когда вы наведете на нее курсор мыши (наведите указатель мыши)*/
+  .active, .accordion:hover {
+    /* background-color: #ccc; */
+  }
+  
+   /* Оформите панель в виде гармошки. Примечание: скрыто по умолчанию  */
+  .panel {
+    padding: 0 18px;
+    /* background-color: white; */
+    display: none;
+    overflow: hidden;
+    font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+color: rgba(255, 255, 255, 0.5);
+  }
+  .end{
+    /* display: flex; */
+    /* display: block; */
+    width: 1197px;
+    height: 320px;
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+    border-radius: 10px;
+    /* justify-items: center; */
+    /* justify-content: center; */
+  }
+  .end__h1{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 49px;
+    margin-bottom: 20px;
+  }
+  .end__btn{
+    position: relative; 
+    left: 50%;
+    transform: translate(-50%, 0);
+    /* !!!!!!!!!!!!!!!передвинуть кнопку в центр */
+    width: 155px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    /* margin: 0 auto; */
+  }
+  .end__btn:active {
+    transform: translateY(0.5px);
+    
+    box-shadow: none;
+  }
